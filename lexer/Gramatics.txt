@@ -1,0 +1,43 @@
+1. <program> --> <segment_declar>(<segment_list>|<empty>)<end_program>
+
+2. <segment_list> --> <segment_declar>(<segment_list>|<empty>)
+
+3. <segment_declar> --> <segment_identifier> SEGMENT <block> <segment_identifier> ENDS
+
+4. <block> --> (<statement_list>|<empty>)  
+
+6. <statement_list> --> <statement>(<statement_list>|<empty>)
+
+7. <declaration> --> <identifier> <format_part>
+
+8. <format_part> --> DD | DQ <right_formatted_constant>
+
+9. <statement> --> <entry_point> | <declaration> | <fldz_statement> | <fsub_statement> | <fmul_statement> | <fcomp_statment> 
+
+10. <fsub_statement> --> FSUB <identifier><base_index_adress>
+
+11. <base_index_adress> --> [ <register32> | <register16>  + <register32> | <register16> ]
+
+12. <register32> --> EBX | EAX | ESI | ECX | EDX | EBP | ESP | EDI | EIP 
+
+13. <register16> --> CS | DS | ES | FS | GS | SS 
+
+14. <fmul_statement> --> FMUL <identifier_st> , ST
+
+15. <identifier_st> --> ST ( <st_argument> )
+
+16. <fcomp_statement> --> FCOMP <identifier_st>
+
+17. <right_formatted_constant> --> <constant>
+
+18. <segment_identifier> --> <indentifier>
+
+19. <end_program> --> END <entry_point_identifier> 
+
+20. <entry_point> --> <entry_point_identifier> :
+
+21. <entry_point_identifier> --> <identifier>
+
+22. <st_argument> --> 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7
+
+23. <fldz_statement> --> FLDZ

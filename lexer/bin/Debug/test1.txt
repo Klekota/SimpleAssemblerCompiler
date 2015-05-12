@@ -1,0 +1,8 @@
+PROGRAM (*comment*)
+12343 (*constant*)
+(*
+tejytbjvdfhyivd
+j
+*)
+(*****************************************)
+(**)

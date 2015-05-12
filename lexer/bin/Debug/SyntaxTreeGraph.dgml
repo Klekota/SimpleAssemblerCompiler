@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="0" Value="" Label="program" />
+    <Node Id="1" Value="" Label="segment_declar" />
+    <Node Id="2" Value="" Label="segment_identifier" />
+    <Node Id="3" Value="data" Label="token: data" />
+    <Node Id="4" Value="SEGMENT" Label="token: SEGMENT" />
+  </Nodes>
+  <Links>
+    <Link Source="0" Target="1" />
+    <Link Source="1" Target="2" />
+    <Link Source="2" Target="3" />
+    <Link Source="1" Target="4" />
+  </Links>
+</DirectedGraph>

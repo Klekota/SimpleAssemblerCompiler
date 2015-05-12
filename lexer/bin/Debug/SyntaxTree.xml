@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XMLNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="0" name="program" value="">
+  <nodes>
+    <XMLNode Id="1" name="segment_declar" value="">
+      <nodes>
+        <XMLNode Id="2" name="segment_identifier" value="">
+          <nodes>
+            <XMLNode Id="3" name="token" value="data">
+              <nodes />
+            </XMLNode>
+          </nodes>
+        </XMLNode>
+        <XMLNode Id="4" name="token" value="SEGMENT">
+          <nodes />
+        </XMLNode>
+      </nodes>
+    </XMLNode>
+  </nodes>
+</XMLNode>
